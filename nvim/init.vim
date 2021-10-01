@@ -12,7 +12,9 @@ Plug 'mattn/emmet-vim'
 
 call plug#end()
 
-" One Dark Theme
+" Load generals settings
+source $HOME/.config/nvim/settings/general.vim
+"One Dark Theme
 source $HOME/.config/nvim/settings/theme.vim
 " Coc languages
 source $HOME/.config/nvim/settings/coc.vim
