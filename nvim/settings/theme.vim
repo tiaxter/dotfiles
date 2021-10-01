@@ -1,3 +1,4 @@
+let g:onedark_style = 'cool'
 colorscheme onedark
 
 if (has("termguicolors"))
