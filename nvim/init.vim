@@ -9,6 +9,8 @@ Plug 'https://github.com/neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'mattn/emmet-vim'
+" Enable editting files as root after openning them. Use :SudaWrite to save
+Plug 'lambdalisue/suda.vim'
 
 call plug#end()
 
