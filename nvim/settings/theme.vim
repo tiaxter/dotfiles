@@ -9,3 +9,6 @@ endif
 
 " Hexokinase settings
 let g:Hexokinase_highlighters = ['sign_column']
+" Setup AirLine Theme
+let g:airline_powerline_fonts = 1
+let g:airline_theme='deus'

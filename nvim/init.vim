@@ -11,6 +11,8 @@ Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 Plug 'mattn/emmet-vim'
 " Enable editting files as root after openning them. Use :SudaWrite to save
 Plug 'lambdalisue/suda.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
