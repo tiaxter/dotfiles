@@ -18,3 +18,5 @@ source $HOME/.config/nvim/settings/general.vim
 source $HOME/.config/nvim/settings/theme.vim
 " Coc languages
 source $HOME/.config/nvim/settings/coc.vim
+" Load keymaps settings
+source $HOME/.config/nvim/settings/keymaps.vim
