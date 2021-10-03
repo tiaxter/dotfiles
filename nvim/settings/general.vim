@@ -5,3 +5,9 @@
 
 " Set relative and absolute lines number
 :set number relativenumber
+
+" Enable mouse
+set mouse=a
+
+" Enable highlighting of the current line
+set cursorline
