@@ -19,6 +19,8 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
+" Git management
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 

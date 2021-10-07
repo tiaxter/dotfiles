@@ -11,3 +11,15 @@ set mouse=a
 
 " Enable highlighting of the current line
 set cursorline
+
+" Enable speed scrol
+set ttyfast
+
+" Enable syntax highlighting
+syntax on
+
+" Set autoindent for the next line
+set autoindent
+
+" Enable system clipboard
+set clipboard=unnamedplus
