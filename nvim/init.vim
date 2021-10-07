@@ -21,6 +21,8 @@ Plug 'natebosch/vim-lsc'
 Plug 'natebosch/vim-lsc-dart'
 " Git management
 Plug 'tpope/vim-fugitive'
+" Highlight unique character in every word
+Plug 'unblevable/quick-scope'
 
 call plug#end()
 
