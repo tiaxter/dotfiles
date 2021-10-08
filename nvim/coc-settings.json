@@ -1,3 +1,30 @@
 {
-	"html.autoClosingTags": true
+	"html.autoClosingTags": true,
+  "suggest.completionItemKindLabels": {
+      "keyword": "Keyword \uf1de",
+      "variable": "Variable \ue79b",
+      "value": "Value \uf89f",
+      "operator": "Operator \u03a8",
+      "function": "Function \u0192",
+      "reference": "Reference \ufa46",
+      "constant": "Constant \uf8fe",
+      "method": "Method \uf09a",
+      "struct": "Struct \ufb44",
+      "class": "Class \uf0e8",
+      "interface": "Interface \uf417",
+      "text": "Text \ue612",
+      "enum": "Enum \uf435",
+      "enumMember": "Enum member\uf02b",
+      "module": "Module \uf40d",
+      "color": "Color \ue22b",
+      "property": "Property \ue624",
+      "field": "Field \uf9be",
+      "unit": "Unit \uf475",
+      "event": "Event \ufacd",
+      "file": "File \uf723",
+      "folder": "Folder \uf114",
+      "snippet": "Snippet \ue60b",
+      "typeParameter": "Type parameter \uf728",
+      "default": "\uf29c"
+    }
 }
