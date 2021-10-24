@@ -6,6 +6,12 @@ font:
     family: Dank Mono NF
     style: Regular
 
+  size: 10.5
+
+  offset:
+    x: 0
+    y: 4
+
 window:
   padding:
     x: 8
@@ -44,3 +50,7 @@ colors:
     magenta: '0xca72e4'
     cyan:    '0x4dbdcb'
     white:   '0x828791'
+
+cursor:
+  style: Beam
+  unfocused_hollow: true
