@@ -9,3 +9,8 @@ keymap('n', '<C-n>', ":NvimTreeToggle<CR>", {noremap = true})
 keymap('n', ';f', ":lua require('telescope.builtin').find_files{}<CR>", {noremap = true})
 keymap('n', ';g', ":lua require('telescope.builtin').git_files{}<CR>", {noremap = true})
 keymap('n', '//', ":lua require('telescope.builtin').buffers{}<CR>", {noremap = true})
+
+-- Use emmet expanding using TAB key
+vim.api.nvim_command([[
+  imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+]])

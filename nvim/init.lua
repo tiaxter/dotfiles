@@ -1,7 +1,7 @@
--- General settings
-require('general')
 -- Plugins
 require('plugins')
+-- General settings
+require('general')
 -- Theme
 require('theme')
 -- Keymaps

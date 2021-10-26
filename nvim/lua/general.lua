@@ -15,3 +15,9 @@ set.expandtab = true
 -- Set hybrid line numbers
 set.number = true
 set.relativenumber = true
+
+ -- Enable Neovim Auto Pairs
+require('nvim-autopairs').setup{}
+
+-- NeoScroll
+require('neoscroll').setup{}

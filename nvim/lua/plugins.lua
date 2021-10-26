@@ -50,4 +50,29 @@ return require('packer').startup(function ()
       {'nvim-lua/popup.nvim'}
     }
   }
+
+  -- Auto pairs bracket
+  use 'windwp/nvim-autopairs'
+
+  -- Markdown editor
+  use {
+    'plasticboy/vim-markdown',
+    requires = {
+      'godlygeek/tabular'
+    }
+  }
+
+  use {
+    'iamcco/markdown-preview.nvim',
+    run = function() vim.fn['mkdp#util#install']() end,
+    ft = {'markdown'}
+  }
+
+  -- NeoScroll
+  use 'karb94/neoscroll.nvim'
+
+  -- Emmet notation
+  use 'mattn/emmet-vim'
+
 end)
+
