@@ -3,7 +3,7 @@ env:
 
 font:
   normal:
-    family: Dank Mono NF
+    family: DankMono NF
     style: Regular
 
   size: 10.5
