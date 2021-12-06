@@ -16,7 +16,7 @@ set.expandtab = true
 set.number = true
 set.relativenumber = true
 
--- Set hidden
+-- Set hidden (can change tab without saving file)
 set.hidden = true
 
  -- Enable Neovim Auto Pairs
