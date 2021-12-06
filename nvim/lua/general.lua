@@ -16,6 +16,9 @@ set.expandtab = true
 set.number = true
 set.relativenumber = true
 
+-- Set hidden
+set.hidden = true
+
  -- Enable Neovim Auto Pairs
 require('nvim-autopairs').setup{}
 
