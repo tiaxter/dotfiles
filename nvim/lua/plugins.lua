@@ -5,9 +5,10 @@ return require('packer').startup(function ()
   -- Atome One Dark color scheme
 	use 'navarasu/onedark.nvim'
 
-  -- Nvim Icons with correct colors
-  use 'kyazdani42/nvim-web-devicons'
-  use 'yamatsum/nvim-nonicons'
+  -- Icons
+  require('nvim-web-devicons').setup{
+    default = true
+  }
 
 	use {
 	  'hoob3rt/lualine.nvim',
@@ -38,7 +39,12 @@ return require('packer').startup(function ()
   }
 
   -- NvimTree
-  use 'kyazdani42/nvim-tree.lua'
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+  }
 
   -- Dashboard NVIM
   use 'glepnir/dashboard-nvim'

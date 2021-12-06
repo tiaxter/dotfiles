@@ -23,20 +23,34 @@ vim.g.nvim_tree_show_icons = {
   files = 1,
   folder_arrows = 1
 }
-vim.g.nvim_tree_gitignore = 0
 vim.g.nvim_tree_git_hl = 0
 
 require('nvim-tree').setup{
-  open_on_setup = 0,
-  auto_close = 1,
-  open_on_tab = 0,
+  hijack_cursor = false,
+  disable_netrw = true,
+  hijack_netrw = true,
+  git = {
+    enable = false,
+  },
+  update_cwd = true,
+  update_to_buf_dir = {
+    enable = true,
+    auto_open = true,
+  },
+  system_open = {
+    cmd = nil,
+    args = {},
+  },
+  open_on_setup = false,
+  auto_close = true,
+  open_on_tab = false,
   update_focused_file = {
-    enable = 1,
+    enable = true,
   },
   view = {
     width = tree_width,
     side = 'left',
-    auto_resize = 0
+    auto_resize = 0,
   }
 }
 
