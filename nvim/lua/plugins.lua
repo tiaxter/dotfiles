@@ -7,6 +7,7 @@ return require('packer').startup(function ()
 
   -- Nvim Icons with correct colors
   use 'kyazdani42/nvim-web-devicons'
+  use 'yamatsum/nvim-nonicons'
 
 	use {
 	  'hoob3rt/lualine.nvim',

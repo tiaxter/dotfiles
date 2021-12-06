@@ -1,8 +1,3 @@
--- Icons
-require('nvim-web-devicons').setup{
-  default = true
-}
-
 require('lualine').setup {
   options = {
     theme = 'onedark'
@@ -11,4 +6,5 @@ require('lualine').setup {
 
 -- One Dark Theme
 vim.g.onedark_style = 'cool'
+vim.g.onedark_hide_ending_tildes = true
 require('onedark').setup()
