@@ -20,3 +20,6 @@ vim.cmd([[
   highlight! ALEErrorSign guifg=#C30500
   highlight! ALEWarningSign guifg=#D5B26F
 ]])
+
+-- Setup Hexokinase
+vim.g.Hexokinase_highlighters = {"backgroundfull"}

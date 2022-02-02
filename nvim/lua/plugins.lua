@@ -79,5 +79,10 @@ return require('packer').startup(function ()
 
   use "dense-analysis/ale"
 
+  use {
+    'RRethy/vim-hexokinase',
+    run = 'make hexokinase',
+  }
+
 end)
 
