@@ -1,5 +1,7 @@
 -- Plugins
 require('plugins')
+-- Coc
+require('coc-settings')
 -- General settings
 require('general')
 -- Theme

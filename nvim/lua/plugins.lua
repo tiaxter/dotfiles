@@ -61,25 +61,23 @@ return require('packer').startup(function ()
   -- Auto pairs bracket
   use 'windwp/nvim-autopairs'
 
-  -- Markdown editor
-  use {
-    'plasticboy/vim-markdown',
-    requires = {
-      'godlygeek/tabular'
-    }
-  }
-
-  use {
-    'iamcco/markdown-preview.nvim',
-    run = function() vim.fn['mkdp#util#install']() end,
-    ft = {'markdown'}
-  }
-
   -- NeoScroll
   use 'karb94/neoscroll.nvim'
 
   -- Emmet notation
   use 'mattn/emmet-vim'
+
+  use {"akinsho/toggleterm.nvim"}
+
+  use 'pangloss/vim-javascript'
+
+  use 'leafgarland/typescript-vim'
+
+  use 'peitalin/vim-jsx-typescript'
+
+  use "jxnblk/vim-mdx-js"
+
+  use "dense-analysis/ale"
 
 end)
 

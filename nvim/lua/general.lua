@@ -19,8 +19,23 @@ set.relativenumber = true
 -- Set hidden (can change tab without saving file)
 set.hidden = true
 
+-- Enable fold method by syntx
+set.foldmethod = "syntax"
+
  -- Enable Neovim Auto Pairs
 require('nvim-autopairs').setup{}
 
 -- NeoScroll
 require('neoscroll').setup{}
+
+-- Toggle Terminal
+require("toggleterm").setup{}
+
+-- Setup eslint and prettier
+local global = vim.g
+
+global.ale_fixers = { "prettier", "eslint" }
+global.ale_sign_error = "\u{2715}"
+global.ale_sign_warning = "\u{26A0}"
+global.ale_change_sign_column_color = 1
+

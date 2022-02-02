@@ -4,6 +4,7 @@ local keymap = vim.api.nvim_set_keymap
 keymap('i', 'jk','<Esc>', {noremap = true})
 -- Open file explorer drawer using CTRL-n combination
 keymap('n', '<C-n>', ":NvimTreeToggle<CR>", {noremap = true})
+-- keymap('n', '<C-n>', ":lua require('nvim-tree-toggler').toggle_tree()<CR>", {noremap = true})
 
 -- Telescope keymaps
 keymap('n', ';f', ":lua require('telescope.builtin').find_files{}<CR>", {noremap = true})
