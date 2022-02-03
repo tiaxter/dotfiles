@@ -84,5 +84,7 @@ return require('packer').startup(function ()
     run = 'make hexokinase',
   }
 
+  use 'preservim/nerdcommenter'
+
 end)
 

@@ -15,6 +15,9 @@ keymap('n', '//', ":lua require('telescope.builtin').buffers{}<CR>", {noremap = 
 keymap('n', '<C-i>', ':BufferNext<CR>', { noremap = true, silent = true})
 keymap('n', '<C-q>', ':BufferClose<CR>', { noremap = true, silent = true})
 
+-- NERD Commenter
+keymap('', '<C-_>', ':call nerdcommenter#Comment(0, "toggle")<CR>', { noremap = true, silent = true})
+
 -- Use emmet expanding using TAB key
 vim.api.nvim_command([[
   imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
