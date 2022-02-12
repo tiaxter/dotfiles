@@ -21,10 +21,10 @@ return require('packer').startup(function ()
 	}
 
   -- Autocomplete
-  use {
-    'neoclide/coc.nvim',
-    branch = 'release'
-  }
+  -- use {
+  --   'neoclide/coc.nvim',
+  --   branch = 'release'
+  -- }
 
   -- Golang tools
 	use 'fatih/vim-go'
@@ -77,7 +77,7 @@ return require('packer').startup(function ()
 
   use "jxnblk/vim-mdx-js"
 
-  use "dense-analysis/ale"
+  -- use "dense-analysis/ale"
 
   use {
     'RRethy/vim-hexokinase',
@@ -86,5 +86,20 @@ return require('packer').startup(function ()
 
   use 'preservim/nerdcommenter'
 
+  -- LSP
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'williamboman/nvim-lsp-installer'
+
+  -- VSnip
+  use 'hrsh7th/cmp-vsnip'
+  use 'hrsh7th/vim-vsnip'
+
+  -- LSPKind
+  use 'onsails/lspkind-nvim'
 end)
 

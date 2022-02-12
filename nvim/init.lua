@@ -1,7 +1,7 @@
 -- Plugins
 require('plugins')
--- Coc
-require('coc-settings')
+-- LSP
+require('lsp-config')
 -- General settings
 require('general')
 -- Theme

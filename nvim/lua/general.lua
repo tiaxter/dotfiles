@@ -31,11 +31,11 @@ require("toggleterm").setup{}
 -- Setup eslint and prettier
 local global = vim.g
 
-global.ale_fixers = { "prettier", "eslint" }
-global.ale_sign_error = "\u{2715}"
-global.ale_sign_warning = "\u{26A0}"
-global.ale_change_sign_column_color = 1
-global.ale_virtualtext_cursor = 1
+-- global.ale_fixers = { "prettier", "eslint" }
+-- global.ale_sign_error = "\u{2715}"
+-- global.ale_sign_warning = "\u{26A0}"
+-- global.ale_change_sign_column_color = 1
+-- global.ale_virtualtext_cursor = 1
 
 -- NERDCommenter
 vim.cmd([[filetype plugin on]])
