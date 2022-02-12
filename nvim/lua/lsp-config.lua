@@ -1,5 +1,7 @@
 -- LSPSaga
-require("lspsaga").setup{}
+require("lspsaga").setup{
+  rename_prompt_prefix = "   ",
+}
 --
 
 -- Compe setup
