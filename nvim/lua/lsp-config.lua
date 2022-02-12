@@ -1,3 +1,7 @@
+-- LSPSaga
+require("lspsaga").setup{}
+--
+
 -- Compe setup
 vim.opt.completeopt="menu,menuone,noselect"
 
@@ -91,8 +95,9 @@ vim.cmd([[
 
 -- Keybindings
 
-vim.api.nvim_set_keymap("", "ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", {noremap = true, silent = true})
-vim.api.nvim_set_keymap("", "K", "<cmd>lua vim.lsp.buf.hover()<CR>", {silent = true})
+vim.api.nvim_set_keymap("", "rv", "<cmd>Lspsaga rename<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("", "ca", "<cmd>Lspsaga code_action<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("", "K", "<cmd>Lspsaga hover_doc<CR>", {silent = true})
 vim.api.nvim_set_keymap("", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", {silent = true})
 
 --

@@ -20,12 +20,6 @@ return require('packer').startup(function ()
     run = ':TSUpdate'
 	}
 
-  -- Autocomplete
-  -- use {
-  --   'neoclide/coc.nvim',
-  --   branch = 'release'
-  -- }
-
   -- Golang tools
 	use 'fatih/vim-go'
 
@@ -77,8 +71,6 @@ return require('packer').startup(function ()
 
   use "jxnblk/vim-mdx-js"
 
-  -- use "dense-analysis/ale"
-
   use {
     'RRethy/vim-hexokinase',
     run = 'make hexokinase',
@@ -101,5 +93,8 @@ return require('packer').startup(function ()
 
   -- LSPKind
   use 'onsails/lspkind-nvim'
+
+  -- LSPSaga
+  use {'tami5/lspsaga.nvim', branch = 'nvim6.0'}
 end)
 
