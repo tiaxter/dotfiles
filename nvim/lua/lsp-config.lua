@@ -73,7 +73,6 @@ cmp.setup{
     { name = 'path' },
   }
 }
-
 --
 
 -- UI Customization
@@ -92,20 +91,16 @@ vim.cmd([[
   highlight! CmpItemKindInterface guibg=NONE guifg=#9CDCFE
   highlight! CmpItemKindText guibg=NONE guifg=#9CDCFE
 ]])
-
 --
 
 -- Keybindings
-
 vim.api.nvim_set_keymap("", "rv", "<cmd>Lspsaga rename<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("", "ca", "<cmd>Lspsaga code_action<CR>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("", "K", "<cmd>Lspsaga hover_doc<CR>", {silent = true})
 vim.api.nvim_set_keymap("", "<C-k>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", {silent = true})
-
 --
 
 -- Languages Servers
-
 local lsp_installer_servers = require('nvim-lsp-installer.servers')
 
 local servers = {
@@ -113,7 +108,9 @@ local servers = {
     "sumneko_lua",
     "tsserver",
     "gopls",
-    "eslint"
+    "eslint",
+    "denols",
+    "emmet_ls",
 }
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities(), {
@@ -124,6 +121,12 @@ for _, server_name in pairs(servers) do
     if server_available then
         server:on_ready(function ()
           local opts = {}
+
+          if server_name == "emmet_ls" then
+            opts = {
+              filetypes = { "html", "css", "typescriptreact", "javascriptreact" },
+            }
+          end
 
           require('lspconfig')[server_name].setup {
             capabilities = capabilities
@@ -136,5 +139,4 @@ for _, server_name in pairs(servers) do
         end
     end
   end
-
-  ---
+--
