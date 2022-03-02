@@ -13,6 +13,7 @@ keymap('n', '//', ":lua require('telescope.builtin').buffers{}<CR>", {noremap = 
 
 -- Switch between buffers
 keymap('n', '<C-i>', ':BufferNext<CR>', { noremap = true, silent = true})
+keymap('n', '<S-Tab>', ':BufferPrevious<CR>', { noremap = true, silent = true})
 keymap('n', '<C-q>', ':BufferClose<CR>', { noremap = true, silent = true})
 
 -- NERD Commenter

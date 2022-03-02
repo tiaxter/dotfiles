@@ -21,7 +21,7 @@ return require('packer').startup(function ()
 	}
 
   -- Golang tools
-	use 'fatih/vim-go'
+  use 'ray-x/go.nvim'
 
   -- Easy navigation inline
   use 'unblevable/quick-scope'

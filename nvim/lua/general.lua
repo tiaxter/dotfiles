@@ -19,6 +19,9 @@ set.relativenumber = true
 -- Set hidden (can change tab without saving file)
 set.hidden = true
 
+-- Set no wrap
+set.wrap = false
+
  -- Enable Neovim Auto Pairs
 require('nvim-autopairs').setup{}
 
