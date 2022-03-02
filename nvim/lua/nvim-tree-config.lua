@@ -26,8 +26,6 @@ global.nvim_tree_show_icons = {
 }
 global.nvim_tree_git_hl = 0
 
-global.nvim_tree_quit_on_open = false
-
 require('nvim-tree').setup{
   hijack_cursor = false,
   disable_netrw = true,
@@ -55,5 +53,10 @@ require('nvim-tree').setup{
     height = 40,
     side = 'left',
     auto_resize = 0,
-  }
+  },
+  actions = {
+    open_file = {
+      quit_on_open = false,
+    },
+  },
 }
