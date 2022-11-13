@@ -115,7 +115,7 @@ local servers = {
     "dartls",
 }
 
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities(), {
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities(), {
   snippetSupport = false,
 })
 for _, server_name in pairs(servers) do

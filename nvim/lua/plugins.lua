@@ -1,19 +1,26 @@
 return require('packer').startup(function ()
-	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
 
   -- Atome One Dark color scheme
 	use 'navarasu/onedark.nvim'
 
-  -- Icons
-  require('nvim-web-devicons').setup{
-    default = true
-  }
+  use({
+    'akinsho/bufferline.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
+    after = 'onedark.nvim',
+    config = function()
+      require('bufferline-config')
+    end,
+  })
 
-	use {
-	  'hoob3rt/lualine.nvim',
-	  requires = {'kyazdani42/nvim-web-devicons', opt = true}
-	}
+  -- Icons
+  use('kyazdani42/nvim-web-devicons')
+
+  use {
+    'hoob3rt/lualine.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
 
 	use {
     'nvim-treesitter/nvim-treesitter',
@@ -27,10 +34,10 @@ return require('packer').startup(function ()
   use 'unblevable/quick-scope'
 
   -- Tab management
-  use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }
+  --  use {
+  --    'romgrk/barbar.nvim',
+  --    requires = {'kyazdani42/nvim-web-devicons'}
+  --  }
 
   -- NvimTree
   use {
