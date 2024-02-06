@@ -6,4 +6,4 @@ fish_add_path /opt/homebrew/bin/
 
 # Eza aliases
 alias ls="eza --icons"
-alias ll="ls --lah"
+alias ll="ls -lah"
