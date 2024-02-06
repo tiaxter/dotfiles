@@ -94,3 +94,7 @@ stow .
 
 # Remember to install Slack and Teams on work machine
 echo "If you're using Work Machine remember to install Slack and Teams, using brew!"
+
+# Start yabai and skhd services
+yabai --start-service
+skhd --start-service
