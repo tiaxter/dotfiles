@@ -33,7 +33,7 @@ defaults write com.apple.finder "ShowPathbar" -bool "true"
 defaults write com.apple.finder "FXDefaultSearchScope" -string "SCcf"
 
 # Show folder icons in the Finder title bar
-defaults write com.apple.universalaccess "showWindowTitlebarIcons" -bool "true"
+# defaults write com.apple.universalaccess "showWindowTitlebarIcons" -bool "true"
 
 # Set sidebar icons size in Finder
 defaults write NSGlobalDomain "NSTableViewDefaultSizeMode" -int "1"
@@ -93,6 +93,14 @@ osascript -e 'display notification "Setup Raycast Clibopard History Keystroke, a
 stow .
 
 # Remember to install Slack and Teams on work machine
+# TODO: create Brewfile with only work dependencies and let choose to the user if install also them
+while [ $# -gt 0 ] ; do
+  case $1 in
+    --work) brew bundle --file=./Brewfile.work ;;
+  esac
+  shift
+done
+
 echo "If you're using Work Machine remember to install Slack and Teams, using brew!"
 
 # Start yabai and skhd services
