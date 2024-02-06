@@ -47,6 +47,35 @@ defaults write com.apple.screencapture target -string "clipboard"
 # Show battery percentage on menu bar
 defaults -currentHost write com.apple.controlcenter.plist BatteryShowPercentage -bool true
 
+# TODO: aggiungere che Opt+A e Opt+S portano allo spazio prima e dopo
+# TODO: questo é il valore che deve essere inserito all'interno del file ~/Library/Preferences/com.apple.symbolichotkeys.plist tramite defaults write
+# TODO: devo capire come si scrive questo popo di roba (questo é per Opt+A)
+# 79 =         {
+#     enabled = 0;
+#     value =             {
+#         parameters =                 (
+#             97,
+#             0,
+#             524288
+#         );
+#         type = standard;
+#     };
+# };
+# TODO: questo é per Opt+S
+# 81 =         {
+#     enabled = 1;
+#     value =             {
+#         parameters =                 (
+#             115,
+#             1,
+#             524288
+#         );
+#         type = standard;
+#     };
+# };
+
+ 
+
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
