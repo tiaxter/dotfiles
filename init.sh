@@ -68,6 +68,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # install programs from Brewfile
 brew bundle --file=./Brewfile
 
+# Install Rosetta for any x86_64 application
+softwareupdate --install-rosetta  --agree-to-license 
+
 # Change default shell
 echo "$(which fish)" | sudo tee -a /etc/shells
 chsh -s "$(which fish)"
