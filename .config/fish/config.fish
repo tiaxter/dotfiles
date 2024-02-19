@@ -10,3 +10,6 @@ alias ll="ls -lah"
 
 # FNM (NVM) configs
 eval (fnm env)
+
+# Zioxide startup
+zoxide init --cmd cd fish | source
