@@ -5,7 +5,6 @@ yabai -m config window_border_width 2
 # set window border color
 yabai -m config active_window_border_color 0xff775759
 
-
 # set config layout to bsp
 yabai -m config layout bsp
 
@@ -24,3 +23,9 @@ yabai -m config mouse_follows_focus on
 
 # when window is dropped then swap it
 yabai -m mouse_drop_action swap
+
+# make JetBrains products popup windows float
+apps='^(IntelliJ IDEA|WebStorm|GoLand|PyCharm|PhpStorm)$'
+yabai -m rule --add app="JetBrains Toolbox" manage=off
+yabai -m rule --add app="${apps}" manage=off
+yabai -m rule --add app="${apps}" title="( – )" manage=on
