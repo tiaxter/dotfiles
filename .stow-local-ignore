@@ -2,5 +2,6 @@
 \.gitignore
 init.sh
 Brewfile*
+Brewfile.*.*
 config.rayconfig
 phpstorm-settings.zip
