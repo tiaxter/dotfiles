@@ -48,15 +48,23 @@ defaults write com.apple.screencapture target -string "clipboard"
 defaults -currentHost write com.apple.controlcenter.plist BatteryShowPercentage -bool true
 
 # Set Opt+A e Opt+S move to previous and next space
+plutil -replace AppleSymbolicHotKeys.79.value -dictionary ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -replace AppleSymbolicHotKeys.79.value.parameters -array ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -insert AppleSymbolicHotKeys.79.value.parameters -integer 97 -append ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -insert AppleSymbolicHotKeys.79.value.parameters -integer 0 -append ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -insert AppleSymbolicHotKeys.79.value.parameters -integer 524288 -append ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
+plutil -replace AppleSymbolicHotKeys.81.value -dictionary ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -replace AppleSymbolicHotKeys.81.value.parameters -array ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -insert AppleSymbolicHotKeys.81.value.parameters -integer 115 -append ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -insert AppleSymbolicHotKeys.81.value.parameters -integer 1 -append ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -insert AppleSymbolicHotKeys.81.value.parameters -integer 524288 -append ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+# Sonoma fixes
+defaults import com.apple.symbolichotkeys ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+# Apply all changes in the current session
+/System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
 
 # Install homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
