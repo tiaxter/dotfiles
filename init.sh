@@ -60,6 +60,9 @@ plutil -insert AppleSymbolicHotKeys.81.value.parameters -integer 115 -append ~/L
 plutil -insert AppleSymbolicHotKeys.81.value.parameters -integer 1 -append ~/Library/Preferences/com.apple.symbolichotkeys.plist
 plutil -insert AppleSymbolicHotKeys.81.value.parameters -integer 524288 -append ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
+# Disable Cmd-Space to open spotlight
+plutil -replace AppleSymbolicHotKeys.64.enabled -bool NO ~/Library/Preferences/com.apple.symbolichotkeys.plist
+
 # Sonoma fixes
 defaults import com.apple.symbolichotkeys ~/Library/Preferences/com.apple.symbolichotkeys.plist
 
